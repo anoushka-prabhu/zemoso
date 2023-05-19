@@ -1,0 +1,654 @@
+Last login: Thu May 18 17:42:10 on ttys001
+(base) anoushkaprabhu@Anoushkas-MBP ~ % git init
+Initialized empty Git repository in /Users/anoushkaprabhu/.git/
+(base) anoushkaprabhu@Anoushkas-MBP ~ % ls -la
+total 280
+drwxr-x---+  42 anoushkaprabhu  staff   1344 May 18 17:44 .
+drwxr-xr-x    5 root            admin    160 Aug 24  2022 ..
+-r--------    1 anoushkaprabhu  staff      7 Jul 11  2022 .CFUserTextEncoding
+-rw-r--r--@   1 anoushkaprabhu  staff  14340 May 18 17:39 .DS_Store
+drwx------+ 150 anoushkaprabhu  staff   4800 May 18 17:42 .Trash
+drwxr-xr-x    3 anoushkaprabhu  staff     96 Aug 26  2022 .anaconda
+-rw-------    1 anoushkaprabhu  staff   6875 Feb  2 13:25 .bash_history
+-rw-r--r--    1 anoushkaprabhu  staff    535 Aug 25  2022 .bash_profile
+drwxrwsr-x    3 anoushkaprabhu  staff     96 May 18 17:44 .conda
+-rw-r--r--    1 anoushkaprabhu  staff     23 Aug 26  2022 .condarc
+drwxr-xr-x    3 anoushkaprabhu  staff     96 Aug 25  2022 .config
+drwxr-xr-x    3 anoushkaprabhu  staff     96 Aug 26  2022 .continuum
+drwxr-xr-x    9 anoushkaprabhu  staff    288 May 18 17:44 .git
+-rw-r--r--    1 anoushkaprabhu  staff     71 May 18 17:32 .gitconfig
+drwxr-xr-x    6 anoushkaprabhu  staff    192 Feb 10 15:04 .ipynb_checkpoints
+drwxr-xr-x    5 anoushkaprabhu  staff    160 Aug 24  2022 .ipython
+drwxr-xr-x    3 anoushkaprabhu  staff     96 Aug 26  2022 .jupyter
+-rw-------    1 anoushkaprabhu  staff     20 May 18 17:35 .lesshst
+drwxr-xr-x    3 anoushkaprabhu  staff     96 Aug 24  2022 .matplotlib
+drwxr-xr-x   15 anoushkaprabhu  staff    480 May 18 17:42 .spyder-py3
+-rw-r--r--    1 anoushkaprabhu  staff    347 Aug 25  2022 .tcshrc
+-rw-r--r--    1 anoushkaprabhu  staff    630 Aug 25  2022 .xonshrc
+-rw-r--r--    1 anoushkaprabhu  staff    243 May 18 17:07 .zprofile
+-rw-------    1 anoushkaprabhu  staff   3001 May 18 17:44 .zsh_history
+drwx------    6 anoushkaprabhu  staff    192 May 18 17:44 .zsh_sessions
+-rw-r--r--    1 anoushkaprabhu  staff    534 Aug 25  2022 .zshrc
+drwx------@   3 anoushkaprabhu  staff     96 Jul 11  2022 Applications
+drwx------@   6 anoushkaprabhu  staff    192 Apr 24 11:52 Desktop
+drwx------+  11 anoushkaprabhu  staff    352 Dec  9 17:20 Documents
+drwx------+ 201 anoushkaprabhu  staff   6432 May 18 17:28 Downloads
+-rw-r--r--    1 anoushkaprabhu  staff   9895 Jan 29 17:17 Lab1temp_152.ipynb
+-rw-r--r--    1 anoushkaprabhu  staff   7568 Feb  1 17:13 Lab2temp_152.ipynb
+-rw-r--r--    1 anoushkaprabhu  staff   5688 Feb 10 15:22 Lab3temp_152.ipynb
+drwx------@  87 anoushkaprabhu  staff   2784 May 10 12:47 Library
+drwx------    4 anoushkaprabhu  staff    128 Jul 11  2022 Movies
+drwx------+   4 anoushkaprabhu  staff    128 Jul 11  2022 Music
+drwx------+   6 anoushkaprabhu  staff    192 Feb 24 23:07 Pictures
+drwxr-xr-x+   4 anoushkaprabhu  staff    128 Jul 11  2022 Public
+drwxr-xr-x    3 anoushkaprabhu  staff     96 Sep 12  2022 SimUText 2022-2023
+-rw-r--r--    1 anoushkaprabhu  staff  47006 Jan 30 14:08 Untitled23-2.ipynb
+-rw-r--r--    1 anoushkaprabhu  staff      0 May 18 17:43 duplicates.txt
+drwxr-xr-x    5 anoushkaprabhu  staff    160 Aug 26  2022 opt
+(base) anoushkaprabhu@Anoushkas-MBP ~ % git status
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Downloads/': Operation not permitted
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.CFUserTextEncoding
+	.DS_Store
+	.anaconda/
+	.bash_history
+	.bash_profile
+	.conda/
+	.condarc
+	.config/
+	.continuum/
+	.gitconfig
+	.ipynb_checkpoints/
+	.ipython/
+	.jupyter/
+	.lesshst
+	.matplotlib/
+	.spyder-py3/
+	.tcshrc
+	.xonshrc
+	.zprofile
+	.zsh_history
+	.zsh_sessions/
+	.zshrc
+	Applications/
+	Desktop/
+	Documents/
+	Lab1temp_152.ipynb
+	Lab2temp_152.ipynb
+	Lab3temp_152.ipynb
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+	SimUText 2022-2023/
+	Untitled23-2.ipynb
+	duplicates.txt
+	opt/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) anoushkaprabhu@Anoushkas-MBP ~ % touch .gitignore
+(base) anoushkaprabhu@Anoushkas-MBP ~ % ls
+Applications		Lab3temp_152.ipynb	SimUText 2022-2023
+Desktop			Library			Untitled23-2.ipynb
+Documents		Movies			duplicates.txt
+Downloads		Music			opt
+Lab1temp_152.ipynb	Pictures
+Lab2temp_152.ipynb	Public
+(base) anoushkaprabhu@Anoushkas-MBP ~ % cd Document
+cd: no such file or directory: Document
+(base) anoushkaprabhu@Anoushkas-MBP ~ % cd Documents
+(base) anoushkaprabhu@Anoushkas-MBP Documents % .gitignore
+zsh: command not found: .gitignore
+(base) anoushkaprabhu@Anoushkas-MBP Documents % touch .gitignore
+(base) anoushkaprabhu@Anoushkas-MBP Documents % git status
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Downloads/': Operation not permitted
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../.CFUserTextEncoding
+	../.DS_Store
+	../.anaconda/
+	../.bash_history
+	../.bash_profile
+	../.conda/
+	../.condarc
+	../.config/
+	../.continuum/
+	../.gitconfig
+	../.gitignore
+	../.ipynb_checkpoints/
+	../.ipython/
+	../.jupyter/
+	../.lesshst
+	../.matplotlib/
+	../.spyder-py3/
+	../.tcshrc
+	../.xonshrc
+	../.zprofile
+	../.zsh_history
+	../.zsh_sessions/
+	../.zshrc
+	../Applications/
+	../Desktop/
+	./
+	../Lab1temp_152.ipynb
+	../Lab2temp_152.ipynb
+	../Lab3temp_152.ipynb
+	../Library/
+	../Movies/
+	../Music/
+	../Pictures/
+	../Public/
+	../SimUText 2022-2023/
+	../Untitled23-2.ipynb
+	../duplicates.txt
+	../opt/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) anoushkaprabhu@Anoushkas-MBP Documents % touch .gitignore
+(base) anoushkaprabhu@Anoushkas-MBP Documents % cd Documents/
+cd: no such file or directory: Documents/
+(base) anoushkaprabhu@Anoushkas-MBP Documents % ls
+ENGR 102		MATH 151		barcode_checker.py
+Lab1temp_151_22C.ipynb	Zoom
+Lab3temp_151_22C.ipynb	_.jpeg
+(base) anoushkaprabhu@Anoushkas-MBP Documents % ls
+ENGR 102		MATH 151		barcode_checker.py
+Lab1temp_151_22C.ipynb	Zoom			git basics
+Lab3temp_151_22C.ipynb	_.jpeg
+(base) anoushkaprabhu@Anoushkas-MBP Documents % cd git basics/
+cd: string not in pwd: git
+(base) anoushkaprabhu@Anoushkas-MBP Documents % ls
+ENGR 102		MATH 151		barcode_checker.py
+Lab1temp_151_22C.ipynb	Zoom			git-basics
+Lab3temp_151_22C.ipynb	_.jpeg
+(base) anoushkaprabhu@Anoushkas-MBP Documents % cd git-basics
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % cd git-basics/
+cd: no such file or directory: git-basics/
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % ls -la
+total 0
+drwxr-xr-x   2 anoushkaprabhu  staff   64 May 18 18:01 .
+drwx------+ 13 anoushkaprabhu  staff  416 May 18 18:01 ..
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git init
+Initialized empty Git repository in /Users/anoushkaprabhu/Documents/git-basics/.git/
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % ls la
+ls: la: No such file or directory
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % ls -la
+total 0
+drwxr-xr-x   3 anoushkaprabhu  staff   96 May 18 18:02 .
+drwx------+ 13 anoushkaprabhu  staff  416 May 18 18:01 ..
+drwxr-xr-x   9 anoushkaprabhu  staff  288 May 18 18:02 .git
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	howdy_world.py
+	leet_speak.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % touch .gitignore
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	howdy_world.py
+	leet_speak.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git statuss
+git: 'statuss' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % fit status
+zsh: command not found: fit
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	leet_speak.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git add .gitignore
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % got status
+zsh: command not found: got
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git status 
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	leet_speak.py
+
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git add - A
+fatal: pathspec '-' did not match any files
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git add -A
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .gitignore
+	new file:   leet_speak.py
+
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git reset leet_spreak.py
+fatal: ambiguous argument 'leet_spreak.py': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+(base) anoushkaprabhu@Anoushkas-MBP git-basics %  git reset leet_sreak.py 
+fatal: ambiguous argument 'leet_sreak.py': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git reset leet_speak.py
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	leet_speak.py
+
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git reset
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	leet_speak.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git add -A
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .gitignore
+	new file:   leet_speak.py
+
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git commit -m "Initial Commit"
+[main (root-commit) c722eb5] Initial Commit
+ 2 files changed, 30 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 leet_speak.py
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git status
+On branch main
+nothing to commit, working tree clean
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % git log
+commit c722eb5350f3c7dc8da7c1f0e7d0efca5e54d53b (HEAD -> main)
+Author: Anoushka Prabhu <anoushka.prabhu@zemosolabs.com>
+Date:   Thu May 18 18:17:21 2023 -0500
+
+    Initial Commit
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % cd clone-git
+cd: no such file or directory: clone-git
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % cd clone-git/
+cd: no such file or directory: clone-git/
+(base) anoushkaprabhu@Anoushkas-MBP git-basics % cd .. 
+(base) anoushkaprabhu@Anoushkas-MBP Documents % cd clone-git
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % ls -la
+total 0
+drwxr-xr-x   2 anoushkaprabhu  staff   64 May 18 18:20 .
+drwx------+ 14 anoushkaprabhu  staff  448 May 18 18:20 ..
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git clone ../remote_repo.git .
+fatal: repository '../remote_repo.git' does not exist
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git clone https://github.com/CoreyMSchafer/remote_repo.git .
+Cloning into '.'...
+Username for 'https://github.com': anoushka-prabhu
+Password for 'https://anoushka-prabhu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/CoreyMSchafer/remote_repo.git/'
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git clone https://github.com/anoushka-prabhu/test .
+Cloning into '.'...
+Username for 'https://github.com': anoushka-prabhu
+Password for 'https://anoushka-prabhu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/anoushka-prabhu/test/'
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git clone https://github.com/anoushka-prabhu/test .
+Cloning into '.'...
+Username for 'https://github.com': anoushka-prabhu
+Password for 'https://anoushka-prabhu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/anoushka-prabhu/test/'
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git clone https://github.com/anoushka-prabhu/test .
+Cloning into '.'...
+Username for 'https://github.com': anoushka-prabhu
+Password for 'https://anoushka-prabhu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/anoushka-prabhu/test/'
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git clone https://github.com/anoushka-prabhu/test .
+Cloning into '.'...
+Username for 'https://github.com': anoushka-prabhu
+Password for 'https://anoushka-prabhu@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/anoushka-prabhu/test/'
+(base) anoushkaprabhu@Anoushkas-MBP clone-git %  git clone https://github.com/anoushka-prabhu/test .
+Cloning into '.'...
+Username for 'https://github.com': anoushka-prabhu
+Password for 'https://anoushka-prabhu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/anoushka-prabhu/test/'
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git clone https://github.com/anoushka-prabhu/clone .
+Cloning into '.'...
+warning: You appear to have cloned an empty repository.
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git clone https://github.com/anoushka-prabhu/test.git .
+fatal: destination path '.' already exists and is not an empty directory.
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % ls-la
+zsh: command not found: ls-la
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % ls -la
+total 0
+drwxr-xr-x   3 anoushkaprabhu  staff   96 May 18 19:34 .
+drwx------+ 14 anoushkaprabhu  staff  448 May 18 18:20 ..
+drwxr-xr-x   9 anoushkaprabhu  staff  288 May 18 19:34 .git
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git remote -v
+origin	https://github.com/anoushka-prabhu/clone (fetch)
+origin	https://github.com/anoushka-prabhu/clone (push)
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git branch -a
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % ls -la
+total 0
+drwxr-xr-x   3 anoushkaprabhu  staff   96 May 18 19:34 .
+drwx------@ 14 anoushkaprabhu  staff  448 May 18 18:20 ..
+drwxr-xr-x   9 anoushkaprabhu  staff  288 May 18 19:34 .git
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % ls -la
+total 0
+drwxr-xr-x   3 anoushkaprabhu  staff   96 May 18 19:34 .
+drwx------@ 14 anoushkaprabhu  staff  448 May 18 18:20 ..
+drwxr-xr-x   9 anoushkaprabhu  staff  288 May 18 19:34 .git
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git clone https://github.com/anoushka-prabhu/clone .
+
+fatal: destination path '.' already exists and is not an empty directory.
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % cd ..
+(base) anoushkaprabhu@Anoushkas-MBP Documents % cd clone-git
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git clone https://github.com/anoushka-prabhu/clone .
+
+Cloning into '.'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (7/7), done.
+Resolving deltas: 100% (1/1), done.
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % ls -la
+total 24
+drwxr-xr-x   6 anoushkaprabhu  staff  192 May 18 19:46 .
+drwx------@ 14 anoushkaprabhu  staff  448 May 18 19:45 ..
+drwxr-xr-x  12 anoushkaprabhu  staff  384 May 18 19:46 .git
+-rw-r--r--   1 anoushkaprabhu  staff  377 May 18 19:46 howdy_world.py
+-rw-r--r--   1 anoushkaprabhu  staff  721 May 18 19:46 leet_speak.py
+-rw-r--r--   1 anoushkaprabhu  staff  110 May 18 19:46 t1
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git remote -v
+origin	https://github.com/anoushka-prabhu/clone (fetch)
+origin	https://github.com/anoushka-prabhu/clone (push)
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git branch - a
+fatal: '-' is not a valid branch name
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git diff
+diff --git a/leet_speak.py b/leet_speak.py
+index 294c37e..40b5d10 100644
+--- a/leet_speak.py
++++ b/leet_speak.py
+@@ -8,7 +8,7 @@
+ # Date:         11 October 2022
+ #
+ 
+-text = input("Enter some text:")
++text = input("Enter some kind of text:")
+ words = text.split()
+ keys = {'a' : '4', 'e' : '3', 'o' : '0', 's' : '5', 't' : '7'}
+ leetlist = []
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   leet_speak.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git add -A
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   leet_speak.py
+
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git commit - m "added text"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'added text' did not match any file(s) known to git
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git commit -m "added text"
+[main d81ad2e] added text
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git pull origin master
+fatal: couldn't find remote ref master
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git pull origin main
+From https://github.com/anoushka-prabhu/clone
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git push origin main
+Username for 'https://github.com': anoushka-prabhu
+Password for 'https://anoushka-prabhu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/anoushka-prabhu/clone/'
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git push origin main
+Username for 'https://github.com': anoushka-prabhu
+Password for 'https://anoushka-prabhu@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/anoushka-prabhu/clone/'
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git push orgin main
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git push origin main
+Username for 'https://github.com': anoushka-prabhu
+Password for 'https://anoushka-prabhu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/anoushka-prabhu/clone/'
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % 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
+zsh: command not found: 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
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git push origin main
+Username for 'https://github.com': anoushka-prabhu
+Password for 'https://anoushka-prabhu@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 358 bytes | 358.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/anoushka-prabhu/clone
+   54414d9..d81ad2e  main -> main
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git branch howdy-change
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git branch
+  howdy-change
+* main
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git checkout howdy-change
+Switched to branch 'howdy-change'
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git branch
+* howdy-change
+  main
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git status
+On branch howdy-change
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   howdy_world.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git add -A
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git commit -m "learning git branch functions"
+[howdy-change a267fec] learning git branch functions
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git status
+On branch howdy-change
+nothing to commit, working tree clean
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git push -u origin howdy-change
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 399 bytes | 399.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'howdy-change' on GitHub by visiting:
+remote:      https://github.com/anoushka-prabhu/clone/pull/new/howdy-change
+remote: 
+To https://github.com/anoushka-prabhu/clone
+ * [new branch]      howdy-change -> howdy-change
+branch 'howdy-change' set up to track 'origin/howdy-change'.
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git branch -a
+* howdy-change
+  main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/howdy-change
+  remotes/origin/main
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git pull origin main
+From https://github.com/anoushka-prabhu/clone
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git branch --merged 
+* main
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git merge howdy-change 
+Updating d81ad2e..a267fec
+Fast-forward
+ howdy_world.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git branch --merged
+  howdy-change
+* main
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/anoushka-prabhu/clone
+   d81ad2e..a267fec  main -> main
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git branch --merged
+  howdy-change
+* main
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git branch -d
+fatal: branch name required
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git branch -d howdy-change
+Deleted branch howdy-change (was a267fec).
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/howdy-change
+  remotes/origin/main
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git push origin --delete howdy-change
+To https://github.com/anoushka-prabhu/clone
+ - [deleted]         howdy-change
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git branch --a
+error: ambiguous option: a (could be --abbrev or --all)
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --show-current        show current branch name
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --recurse-submodules  recurse through submodules
+    --format <format>     format to use for the output
+
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+(base) anoushkaprabhu@Anoushkas-MBP clone-git % 
