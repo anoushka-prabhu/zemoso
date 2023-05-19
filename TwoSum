@@ -1,5 +1,5 @@
 class Solution(object):
-    def twoSum(self, nums, target):
+    def bruteTwoSum(self, nums, target): # brute force algorithm - run time: 3175ms, memory: 14.2 MB
         """
         :type nums: List[int]
         :type target: int
@@ -11,3 +11,15 @@ class Solution(object):
                     break
                 elif (nums[i]+nums[j]) == target:
                     return [i, j]
+                    
+                    
+    def TwoSum(self, nums, target): # run time: 49ms, memory: 14.4 MB
+        complements = dict()
+
+        for i in range(len(nums)):
+            comp = target - nums[i]
+
+            if nums[i] in complements:
+                return [complements[nums[i]], i]
+            else:
+                complements[comp] = i
