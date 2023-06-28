@@ -1,0 +1,51 @@
+def josephus_circle(self, step):
+  current = self.head 
+
+  length = len(self)
+  while length > 1:
+    count = 1 
+    while count != step:
+      current = current.next 
+      count += 1
+    print("KILL:" + str(current.data))
+    self.remove_node(current)
+    current = current.next
+    length -= 1
+    
+
+def is_circular_linked_list(self, input_list):
+  if input_list.head:
+    current = input_list.head
+    while current.next:
+      current = current.next
+      if current.next == input_list.head:
+        return True
+    return False
+  else:
+    return False
+
+def remove_duplicates(self):
+  current = self.head 
+  seen = dict()
+  while current:
+    if current.data not in seen:
+      seen[current.data] = 1
+      current = current.next
+    else:
+      nxt = current.next
+      self.delete_node(current)
+      current = nxt
+      
+      
+def pairs_with_sum(self, sum_val):
+  pairs = list()
+  p = self.head 
+  q = None 
+  while p:
+    q = p.next
+    while q:
+      if p.data + q.data == sum_val:
+          pairs.append("(" + str(p.data) + "," + str(q.data) + ")")
+      q = q.next
+    p = p.next
+  return pairs
