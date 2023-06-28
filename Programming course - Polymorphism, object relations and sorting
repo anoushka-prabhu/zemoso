@@ -1,0 +1,143 @@
+### Polymorphism
+
+class Animal:
+    def __init__(self, name, sound):
+        self.name = name
+        self.sound = sound
+        
+        
+    def Animal_details(self):
+        print('Name: ', self.name)
+        
+        print('Sound: ', self.sound)
+
+    
+
+class Dog(Animal):
+    
+    def __init__(self, name, sound, family):
+        
+        super().__init__(name, sound)
+        
+        self.family = family
+        
+        
+    def Animal_details(self):
+        
+        super().Animal_details()
+        print('Family: ', self.family)
+   
+
+class Sheep(Animal):
+    
+    def __init__(self, name, sound, color):
+        super().__init__(name, sound)
+        
+        self.color = color
+        
+        
+    def Animal_details(self):
+        
+        super().Animal_details()
+        print('Color: ', self.color)
+   
+d = Dog("Pongo", "Woof Woof", "Husky")
+d.Animal_details()
+
+
+print(" ")
+
+
+s = Sheep("Billy", "Baaa Baaa", "White")
+s.Animal_details()
+
+### Object Relation
+
+class Player:
+    def __init__(self, ID, name, teamName):
+        
+        self.ID = ID
+        self.name = name
+        self.teamName = teamName
+
+
+class Team:
+    def __init__(self, name):
+        
+        self.name = name
+        self.players = []
+
+    def getNumberOfPlayers(self):
+        
+        return len(self.players)
+
+    def addPlayer(self, player):
+        
+        self.players.append(player)
+
+
+class School:
+    def __init__(self, name):
+        
+        self.name = name
+        self.teams = []
+
+    def addTeam(self, team):
+        
+        self.teams.append(team)
+
+    def getTotalPlayersInSchool(self):
+        length = 0
+        for n in self.teams:
+            length += (n.getNumberOfPlayers())
+        return length
+
+
+p1 = Player(1, "Harris", "Red")
+p2 = Player(2, "Carol", "Red")
+p3 = Player(1, "Johnny", "Blue")
+p4 = Player(2, "Sarah", "Blue")
+
+red_team = Team("Red Team")
+red_team.addPlayer(p1)
+red_team.addPlayer(p2)
+
+blue_team = Team("Blue Team")
+blue_team.addPlayer(p2)
+blue_team.addPlayer(p3)
+
+mySchool = School("My School")
+mySchool.addTeam(red_team)
+mySchool.addTeam(blue_team)
+
+print("Total players in mySchool:", mySchool.getTotalPlayersInSchool())
+
+## Built data structures - list to tuple
+
+my_list = [34, 82.6, "Darth Vader", 17, "Hannibal"]
+
+my_tuple = (my_list[0], my_list[len(my_list) - 1], len(my_list))
+print(my_tuple)
+
+
+## - sorting 
+test_list = [40, 35, 82, 14, 22, 66, 53]
+k = 4
+
+test_list.sort()
+kth_max = test_list[-k]
+print(kth_max)
+
+## sorting 2
+
+def count_low_high(num_list):
+    if (len(num_list)==0):
+        return None
+    high_list = len([n for n in num_list if n > 50 or n % 3 == 0])
+    low_list = len([n for n in num_list if n <= 50 and not n % 3 == 0])
+    return [low_list, high_list]
+
+
+num_list = [20, 9, 51, 81, 50, 42, 77]
+
+print(count_low_high(num_list))
